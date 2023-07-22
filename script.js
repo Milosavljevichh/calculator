@@ -4,6 +4,7 @@ const numDisplay = document.querySelector('#display');
 const additionBtn = document.querySelector('#additionBtn');
 const substractionBtn = document.querySelector('#substractionBtn');
 const multiplierBtn = document.querySelector('#multiplierBtn');
+const dividerBtn = document.querySelector('#dividerBtn');
 
 let storedValue = 0;
 let operator = '';
@@ -65,6 +66,7 @@ function checkAllOperators() {
     checkPlus();
     checkMinus();
     checkMultiplier();
+    checkDivider();
 }
 
 //disable and enable btns
@@ -91,6 +93,15 @@ function checkMultiplier() {
         multiplierBtn.disabled = false;
     }
 };
+
+function checkDivider() {
+    if (selectedOperator === true && operator === '/') {
+        dividerBtn.disabled = true;
+    } else if (operator !== '/') {
+        dividerBtn.disabled = false;
+    } 
+}
+
 
 //adds numbers
 function addPlus() {
@@ -123,6 +134,16 @@ function addMultiplier() {
     storedValue = Number(numDisplay.innerHTML);
 };
 
+function addDivider() {
+    if (operator !== '/' && selectedOperator !== true){
+        operate();
+    }
+    selectedOperator = true;
+    operator = '/';
+    checkAllOperators();
+    storedValue = Number(numDisplay.innerHTML);
+};
+
 //does the operations1
 function operate() {
     if (operator === '+') {
@@ -140,5 +161,10 @@ function operate() {
         numDisplay.innerHTML = Number(storedValue) * Number(numDisplay.innerHTML);
         operator = '';
         checkMultiplier();
+    } else if (operator === '/') {
+        selectedOperator = false;
+        numDisplay.innerHTML = Number(storedValue) / Number(numDisplay.innerHTML);
+        operator = '';
+        checkDivider();
     }
 };
