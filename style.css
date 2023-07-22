@@ -18,6 +18,12 @@
     color: white;
 }
 
+/* p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:clip;
+} */
+
 .container {
     display: flex;
     margin: auto;
