@@ -10,31 +10,37 @@
     </head>
     <body>
         <div class="container">
-            <div id="calculatorBox">
-                <div class="display">
-                    <p id="display"></p>
+            <div class="layer">
+                <div id="calculatorBox">
+                    <div class="display">
+                        <p id="display"></p>
+                    </div>
+
+                    <button onclick="addOne()" class="btn1">1</button>
+                    <button onclick="addTwo()" class="btn2">2</button>
+                    <button onclick="addThree()" class="btn3">3</button>
+                    <button onclick="addPlus()" class="btnAdd" id="additionBtn">+</button>
+
+                    <button onclick="addFour()" class="btn4">4</button>
+                    <button onclick="addFive()" class="btn5">5</button>
+                    <button onclick="addSix()" class="btn6">6</button>
+                    <button onclick="addMinus()" class="btn-" id="substractionBtn">-</button>
+
+                    <button onclick="addSeven()" class="btn7">7</button>
+                    <button onclick="addEight()"class="btn8">8</button>
+                    <button onclick="addNine()" class="btn9">9</button>
+                    <button onclick="addMultiplier()" class="btnx" id="multiplierBtn">x</button>
+
+                    <button onclick="clearCalculator()" class="btnAC">AC</button>
+                    <button onclick="addZero()" class="btn0">0</button>
+                    <button onclick="operate()" class="btnEQ">=</button>
+                    <button onclick="addDivider()" class="btnDIVIDE" id="dividerBtn">/</button>
+
                 </div>
-
-                <button onclick="addOne()" class="btn1">1</button>
-                <button onclick="addTwo()" class="btn2">2</button>
-                <button onclick="addThree()" class="btn3">3</button>
-                <button onclick="addPlus()" class="btn+" id="additionBtn">+</button>
-
-                <button onclick="addFour()" class="btn4">4</button>
-                <button onclick="addFive()" class="btn5">5</button>
-                <button onclick="addSix()" class="btn6">6</button>
-                <button onclick="addMinus()" class="btn-" id="substractionBtn">-</button>
-
-                <button onclick="addSeven()" class="btn7">7</button>
-                <button onclick="addEight()"class="btn8">8</button>
-                <button onclick="addNine()" class="btn9">9</button>
-                <button onclick="addMultiplier()" class="btnx" id="multiplierBtn">x</button>
-
-                <button onclick="clearCalculator()" class="btnAC">AC</button>
-                <button onclick="addZero()" class="btn0">0</button>
-                <button onclick="operate()" class="btnEQ">=</button>
-                <button onclick="addDivider()" class="btnDIVIDE" id="dividerBtn">/</button>
-
+                <div class="description">
+                    <p>This is a small project made for <i><a href="https://www.theodinproject.com/about">"The Odin Project"</a></i>. It's not optimized for mobile or tablet.
+                        Feel free to check out my <i><a href="https://github.com/Milosavljevichh">Github</a></i> and my <i><a href="https://milosavljevich.itch.io/">Itch.io</a></i>.</p>
+                </div>
             </div>
         </div>
     </body>

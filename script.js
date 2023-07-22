@@ -22,60 +22,60 @@ function checkOperator() {
 //add numbers after the number button is clicked
 function addZero() {
     checkOperator();
-    if (numDisplay.innerHTML.length <= 16) {
+    if (numDisplay.innerHTML.length <= 12) {
         numDisplay.innerHTML = numDisplay.innerHTML + 0;
 }};
 function addOne() {
     checkOperator();
-    if (numDisplay.innerHTML.length <= 16) {
+    if (numDisplay.innerHTML.length <= 12) {
     numDisplay.innerHTML = numDisplay.innerHTML + 1;
     }
 };
 function addTwo() {
     checkOperator();
-    if (numDisplay.innerHTML.length <= 16) {
+    if (numDisplay.innerHTML.length <= 12) {
     numDisplay.innerHTML = numDisplay.innerHTML + 2;
     }
 };
 function addThree() {
     checkOperator();
-    if (numDisplay.innerHTML.length <= 16) {
+    if (numDisplay.innerHTML.length <= 12) {
     numDisplay.innerHTML = numDisplay.innerHTML + 3;
     }
 };
 function addFour() {
     checkOperator();
-    if (numDisplay.innerHTML.length <= 16) {
+    if (numDisplay.innerHTML.length <= 12) {
     numDisplay.innerHTML = numDisplay.innerHTML + 4;
     }
 };
 function addFive() {
     checkOperator();
-    if (numDisplay.innerHTML.length <= 16) {
+    if (numDisplay.innerHTML.length <= 12) {
     numDisplay.innerHTML = numDisplay.innerHTML + 5;
     }
 };
 function addSix() {
     checkOperator();
-    if (numDisplay.innerHTML.length <= 16) {
+    if (numDisplay.innerHTML.length <= 12) {
     numDisplay.innerHTML = numDisplay.innerHTML + 6;
     }
 };
 function addSeven() {
     checkOperator();
-    if (numDisplay.innerHTML.length <= 16) {
+    if (numDisplay.innerHTML.length <= 12) {
     numDisplay.innerHTML = numDisplay.innerHTML + 7;
     }
 };
 function addEight() {
     checkOperator();
-    if (numDisplay.innerHTML.length <= 16) {
+    if (numDisplay.innerHTML.length <= 12) {
     numDisplay.innerHTML = numDisplay.innerHTML + 8;
     }
 };
 function addNine() {
     checkOperator();
-    if (numDisplay.innerHTML.length <= 16) {
+    if (numDisplay.innerHTML.length <= 12) {
     numDisplay.innerHTML = numDisplay.innerHTML + 9;
     }
 };
