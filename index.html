@@ -10,30 +10,32 @@
     </head>
     <body>
         <div class="container">
-        <div class="btns">
-            <button onclick="addPlus()">+</button>
-            <button onclick="addMinus()">-</button>
-            <button onclick="addMultiplier()">x</button>
-            <button onclick="divideNumbers()">/</button>
-            <button onclick="operate()">=</button>
-        </div>
-        <div class="display">
-            <!-- <input type="number" id="firstNumber">
-            <p id="operator">   </p>
-            <input type="number" id="secondNumber"> -->
-            <p id="display"> </p>
-        </div>
-        <div class="btns">
-            <button onclick="addZero()">0</button>
-            <button onclick="addOne()">1</button>
-            <button onclick="addTwo()">2</button>
-            <button onclick="addThree()">3</button>
-        </div>
-        <div class="btns">
-            <button onclick="addFour()">4</button>
-            <button onclick="addFive()">5</button>
-            <button onclick="addSix()">6</button>
-        </div>
+            <div id="calculatorBox">
+                <div class="display">
+                    <p id="display"> </p>
+                </div>
+
+                <button onclick="addOne()" class="btn1">1</button>
+                <button onclick="addTwo()" class="btn2">2</button>
+                <button onclick="addThree()" class="btn3">3</button>
+                <button onclick="addPlus()" class="btn+">+</button>
+
+                <button onclick="addFour()" class="btn4">4</button>
+                <button onclick="addFive()" class="btn5">5</button>
+                <button onclick="addSix()" class="btn6">6</button>
+                <button onclick="addMinus()" class="btn-">-</button>
+
+                <button onclick="addSeven()" class="btn7">7</button>
+                <button onclick="addEight()"class="btn8">8</button>
+                <button onclick="addNine()" class="btn9">9</button>
+                <button onclick="addMultiplier()" class="btnx">x</button>
+
+                <button onclick="clear()" class="btnAC">AC</button>
+                <button onclick="addZero()" class="btn0">0</button>
+                <button onclick="operate()" class="btnEQ">=</button>
+                <button onclick="divideNumbers()" class="btnDIVIDE">/</button>
+
+            </div>
         </div>
     </body>
 
