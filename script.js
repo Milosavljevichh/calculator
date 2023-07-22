@@ -1,6 +1,8 @@
 
 // vars
 const numDisplay = document.querySelector('#display');
+const additionBtn = document.querySelector('#additionBtn');
+const substractionBtn = document.querySelector('#substractionBtn');
 
 let storedValue = 0;
 let operator = '';
@@ -57,28 +59,58 @@ function addNine() {
     numDisplay.innerHTML = numDisplay.innerHTML + 9;
 };
 
+//checks all functions
+function checkAllOperators() {
+    checkPlus();
+    checkMinus();
+}
+
+//disable and enable btns
+function checkPlus() {
+    if (selectedOperator === true && operator === '+') {
+        additionBtn.disabled = true;
+    } else if (operator !== '+') {
+        additionBtn.disabled = false;
+    }
+};
+
+function checkMinus() {
+    if (selectedOperator === true && operator === '-') {
+        substractionBtn.disabled = true;
+    } else if (operator !== '-') {
+        substractionBtn.disabled = false;
+    }
+};
 
 //adds numbers
 function addPlus() {
-        // * if add method wasn't clicked, store the value thats currently
-        // * inside of display
-    if (operator !== '+') {
-    storedValue = numDisplay.innerHTML;
-    } else {
-        // * else if method was clicked and is clicked again, store the 
-        // * previous stored value + current display value
-        storedValue = Number(storedValue) + Number(numDisplay.innerHTML);
-    }
-    operator = '+';
     selectedOperator = true;
+    operator = '+';
+    checkAllOperators()
+    storedValue = Number(numDisplay.innerHTML);
 };
 
-//does the operations
+function addMinus() {
+    if (operator !== '-' && selectedOperator !== true){
+        operate();
+    }
+    selectedOperator = true;
+    operator = '-';
+    checkAllOperators()
+    storedValue = Number(numDisplay.innerHTML);
+};
+
+//does the operations1
 function operate() {
     if (operator === '+') {
-        console.log(Number(storedValue) + Number(numDisplay.innerHTML));
+        selectedOperator = false;
         numDisplay.innerHTML = Number(storedValue) + Number(numDisplay.innerHTML);
         operator = '';
+        checkPlus();
+    } else if (operator === '-') {
         selectedOperator = false;
-    } 
+        numDisplay.innerHTML = Number(storedValue) - Number(numDisplay.innerHTML);
+        operator = '';
+        checkMinus();
+    }
 };
