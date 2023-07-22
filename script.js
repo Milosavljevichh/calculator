@@ -16,6 +16,10 @@ function checkOperator() {
 
 
 //add numbers after the number button is clicked
+function addZero() {
+    checkOperator()
+    numDisplay.innerHTML = numDisplay.innerHTML + 0
+};
 function addOne() {
     checkOperator()
     numDisplay.innerHTML = numDisplay.innerHTML + 1
@@ -23,6 +27,22 @@ function addOne() {
 function addTwo() {
     checkOperator()
     numDisplay.innerHTML = numDisplay.innerHTML + 2
+};
+function addThree() {
+    checkOperator()
+    numDisplay.innerHTML = numDisplay.innerHTML + 3
+};
+function addFour() {
+    checkOperator()
+    numDisplay.innerHTML = numDisplay.innerHTML + 4
+};
+function addFive() {
+    checkOperator()
+    numDisplay.innerHTML = numDisplay.innerHTML + 5
+};
+function addSix() {
+    checkOperator()
+    numDisplay.innerHTML = numDisplay.innerHTML + 6
 };
 
 
